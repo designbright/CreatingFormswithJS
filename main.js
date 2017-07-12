@@ -102,46 +102,33 @@ let wholeForm = document.querySelector("#fields");
 
 // Create for loop
 for(let i = 0; i < formData.length; i++){
-
       if(formData[i].type === "textarea"){
 
-      // Create needed HTML nodes
-        let textarea = document.createElement("textarea");
-        // let textareaPlaceholder = document.createElement("label");
-        // let textareaID = document.createElement ("id");
+    // Create needed HTML nodes
+      let textarea = document.createElement("textarea");
 
-      // / Set attributes for the textarea element(type(text), name(id), label(placeholder))
-        textarea.setAttribute("type", formData[i].type);
-        textarea.setAttribute("placeholder", formData[i].label);
-        textarea.setAttribute("id", formData[i].id);
+    // / Set attributes for the textarea element(type(text), name(id), label(placeholder))
+      textarea.setAttribute("type", formData[i].type);
+      textarea.setAttribute("placeholder", formData[i].label);
+      textarea.setAttribute("id", formData[i].id);
 
-        // textarea.innerHTML = formData[i].label;
-
-      // Insert New DOM nodes into page
-        // wholeForm.appendChild(textareaPlaceholder);
-        // wholeForm.appendChild(textareaID);
-
-        wholeForm.appendChild(textarea)
+    // Insert New DOM nodes into page
+      wholeForm.appendChild(textarea)
 
 } else if (formData[i].type === "select") {
 
-      // Create needed HTML nodes
-        let select = document.createElement("select");
-        // let selectPlaceholder = document.createElement("label");
-        // let selectID = document.createElement ("id");
+    // Create needed HTML nodes
+      let select = document.createElement("select");
 
-      // Set attributes for the select element(type(text), name(id), label(placeholder))
-        select.setAttribute("type", formData[i].type);
-        select.setAttribute("placeholder", formData[i].label);
-        select.setAttribute("id", formData[i].id);
+    // Set attributes for the select element(type(text), name(id), label(placeholder))
+      select.setAttribute("type", formData[i].type);
+      select.setAttribute("placeholder", formData[i].label);
+      select.setAttribute("id", formData[i].id);
 
-        // select.innerHTML = formData[i].label;
+    // Insert New DOM nodes into page
+      wholeForm.appendChild(select)
 
-      // Insert New DOM nodes into page
-        // wholeForm.appendChild(selectPlaceholder);
-        // wholeForm.appendChild(selectID);
-        wholeForm.appendChild(select)
-
+      // Create for loop for dropdown options
         for (let k=0; k<formData[i].options.length; k++){
             let option = document.createElement("option");
 
@@ -164,11 +151,6 @@ for(let i = 0; i < formData.length; i++){
         input.setAttribute("id", formData[i].id);
 
       // Insert New DOM nodes into page
-        // wholeForm.appendChild(inputPlaceholder);
-        // wholeForm.appendChild(inputID);
-
-            wholeForm.appendChild(input);
+        wholeForm.appendChild(input);
 }
 };
-
-// TODO For loop and IF ELSE IF IF statements - select dropdown area
