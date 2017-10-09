@@ -11,6 +11,19 @@
 * The browser constructs the DOM by parsing the HTML document and creating a "Node" for each element it finds.
     * **Nodes** are JavaScript objects that represent things like elements, attributes, and styles. 
 * You can use DOM commands to create, edit, and traverse the DOM.
+
+## Creating, Updating, and Removing DOM Nodes
+* **Creating New DOM Nodes** 
+To update a page with new content, you must create a node to contain that content.
+
+* **Inserting New DOM Nodes into the Page**
+When new nodes are created, they aren't automatically attached to the page. You have to include them by manually appending them to a parent node.
+
+* **Deleting DOM Nodes** 
+Sometimes, you may need to remove a node from the page entirely.
+
+* **Altering Properties of Nodes** 
+Creating and inserting nodes won't always accomplish all of your aims. You may also need to update the text of a node, or add attribute values.
  
 ## Creating a Form in HTML
 HTML forms are an integral part of virtually every webapp on the web. They allow our applications to collect, update and delete information and are the principal way that users interact with databases and other server-side technologies. Without forms, we wouldn't have paid services, e-commerce, or social media. 
