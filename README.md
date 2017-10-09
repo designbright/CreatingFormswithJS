@@ -1,7 +1,17 @@
 # Project Overview: Creating Forms with JavaScript
 *This project will test your knowledge of parsing through an array of data and appending it to the DOM.*
 
+## Learning Objectives
+* Learn how the browser interprets HTML, CSS, and JavaScript text files to create the **Document Object Model (DOM).** 
+* Demonstrate how to use JavaScript to manipulate the DOM and produce a web page.
 
+## What is the DOM?
+* **The Document Object Model (DOM**) is a tree structure representation of your HTML document. 
+* When the browser loads all of the HTML, CSS, and JavaScript text files, it reads them in the order presented and uses that information to create the DOM. 
+* The browser constructs the DOM by parsing the HTML document and creating a "Node" for each element it finds.
+    * **Nodes** are JavaScript objects that represent things like elements, attributes, and styles. 
+* You can use DOM commands to create, edit, and traverse the DOM.
+ 
 ## Creating a Form in HTML
 HTML forms are an integral part of virtually every webapp on the web. They allow our applications to collect, update and delete information and are the principal way that users interact with databases and other server-side technologies. Without forms, we wouldn't have paid services, e-commerce, or social media. 
 
